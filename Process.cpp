@@ -114,7 +114,7 @@ int CProcess::getFileName(shared_ptr<map<string, string>>& processInfo)
 				
 				if (nextValueIsName) 
 				{
-									processInfo->insert(std::make_pair("Name",segment));	
+					processInfo->insert(std::make_pair("Name",segment));	
 					return result;
 				}
 				if (segment == "Name")
@@ -160,7 +160,7 @@ int CProcess::getFileSize(shared_ptr<map<string, string>>&processInfo)
 				
 				if (nextValueIsVmSize) 
 				{
-									processInfo->insert(std::make_pair("fileSize:",segment));	
+					processInfo->insert(std::make_pair("fileSize:",segment));	
 					return result;
 				}
 				if (segment == "VmSize")
@@ -194,7 +194,7 @@ int CProcess::getFileSize(shared_ptr<map<string, string>>&processInfo)
 				
 				if (nextValueIsVmpeak) 
 				{
-									processInfo->insert(std::make_pair("virtualMemorySize:",segment));	
+					processInfo->insert(std::make_pair("virtualMemorySize:",segment));	
 					return result;
 				}
 				if (segment == "VmPeak")
@@ -228,9 +228,6 @@ int CProcess::getFileSize(shared_ptr<map<string, string>>&processInfo)
 
 				if (nextValueIsVmsize)
 				{
-		                   
-								
-					
 					processInfo->insert(std::make_pair("uid:",segment)); 
 					return result;
 				}
