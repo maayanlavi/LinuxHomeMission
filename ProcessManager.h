@@ -18,7 +18,6 @@
 
 		
 	public:
-		//CMainThread();
 		CProcessManager(const CProcessManager& obj) = delete;
 		static CProcessManager* getInstance() 
 		{
